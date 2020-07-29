@@ -88,7 +88,7 @@ router.post('/sign-up', (req, res, next) => {
     })
     .then(result => {
       console.log(result);
-      res.redirect('/');
+      res.render('profile-status');
     })
     .catch(error => {
       console.log('There was an error sending email.');
