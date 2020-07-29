@@ -5,6 +5,7 @@ require('dotenv').config();
 const debug = require('debug')('lab-file-upload:server');
 const app = require('./app');
 const mongoose = require('mongoose');
+const { TooManyRequests } = require('http-errors');
 
 const PORT = parseInt(process.env.PORT, 10);
 const URI = process.env.MONGODB_URI;
@@ -59,7 +60,8 @@ mongoose
   .connect(URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
   })
   .then(() => {
     debug(`Database connected to URI "${URI}"`);

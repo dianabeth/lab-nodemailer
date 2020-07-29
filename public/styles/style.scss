@@ -1,4 +1,4 @@
-$font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $link-color: #00b7ff;
 
 body {
@@ -7,6 +7,40 @@ body {
   font-family: $font-sans;
 }
 
+nav {
+  display: block;
+}
+
 a {
   color: $link-color;
+}
+.container {
+  background-color: grey;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  max-width: 500px;
+}
+
+header {
+  text-align: center;
+}
+
+.main {
+  background-color: white;
+  font-size: 0.5em;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: 250px;
+}
+
+.bg {
+  text-align: center;
+  background-color: whitesmoke;
+  margin: 5px;
+  padding: 20px;
 }

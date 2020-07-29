@@ -5,7 +5,7 @@ const router = new Router();
 
 router.get('/', (req, res, next) => {
   console.log(req.user);
-  res.render('index', { title: 'Hello World!' });
+  res.render('index', { title: 'Hello!' });
 });
 
 router.get('/private', (req, res, next) => {

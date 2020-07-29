@@ -8,19 +8,28 @@
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
+    <header>
+    <h1> Ironhack Node-Mailer!!! </h1> 
+  </header> 
     <nav>
-      <a href="/">Home</a>
       {{!-- Display relevant routes for non-authenticated vs. authenticated user --}}
       {{#if user}}
-        <a href="/">{{user.name}}'s Profile</a>
+       <a href="/">Home</a>
+            <br>
+    <a href="/profile">{{user.name}}'s Profile</a>
         <form action="/sign-out" method="POST">
-          <button>Sign Out</button>
-        </form>
-        {{else}}
+          <button type="submit" class="btn btn-primary">Sign Out</button>
+        </form>   
+     {{else}}
+        <a href="/">Home</a>
+            <br>
         <a href="/sign-in">Sign In</a>
+            <br>
         <a href="/sign-up">Sign Up</a>
       {{/if}}
     </nav>
+
+     <img src="/images/ironhack logo.png" alt="Ironhack-logo">
     {{{body}}}
   </body>
 </html>

@@ -3,5 +3,34 @@ body {
   padding: 50px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+nav {
+  display: block; }
+
 a {
   color: #00b7ff; }
+
+.container {
+  background-color: grey;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  max-width: 500px; }
+
+header {
+  text-align: center; }
+
+.main {
+  background-color: white;
+  font-size: 0.5em; }
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: 250px; }
+
+.bg {
+  text-align: center;
+  background-color: whitesmoke;
+  margin: 5px;
+  padding: 20px; }
